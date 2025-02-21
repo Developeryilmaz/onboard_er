@@ -1,7 +1,6 @@
 name: onboard_er
-description: "Onboarding screens for Flutter"
-version: 0.0.1
-homepage:
+description: A Flutter onboarding package using bloc.
+version: 0.1.0
 
 environment:
   sdk: ">=3.0.0 <4.0.0"

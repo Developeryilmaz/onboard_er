@@ -1,4 +1,4 @@
-# onboar\_er 🎨🚀
+# onboard_er 🎨🍺
 
 A highly customizable Flutter onboarding package built using `flutter_bloc`. Create elegant, engaging, and smooth onboarding experiences effortlessly! ✨
 
@@ -8,7 +8,7 @@ To install, add the following dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  onboar_er: ^0.1.0
+  onboard_er: ^0.1.0
 ```
 
 Then run:
@@ -17,7 +17,7 @@ Then run:
 flutter pub get
 ```
 
-## 🚀 Features
+## 🍺 Features
 
 ✅ **Beautiful animations** using Lottie
 ✅ **StatelessWidget based architecture**
@@ -33,7 +33,7 @@ Easily integrate onboarding screens with just a few lines of code:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:onboar_er/onboar_er.dart';
+import 'package:onboard_er/onboard_er.dart';
 
 void main() {
   runApp(MyApp());
@@ -48,19 +48,17 @@ class MyApp extends StatelessWidget {
           OnboardModel(
             title: "Welcome!",
             description: "This is an awesome onboarding experience.",
-            url: "https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json
-            ",
+            imageAsset: "assets/animation1.json",
           ),
           OnboardModel(
             title: "Easy to Use",
             description: "Our app is super easy to use!",
-            url: "https://cdn.lordicon.com/dxjqoygy.json",
+            imageAsset: "assets/animation2.json",
           ),
           OnboardModel(
             title: "Let's Get Started!",
             description: "Begin your journey now!",
-            url: "https://assets8.lottiefiles.com/packages/lf20_djdcueig.json
-            ",
+            imageAsset: "assets/animation3.json",
           ),
         ],
       ),
@@ -101,3 +99,40 @@ Future<void> requestNotificationPermission() async {
 ```
 
 ---
+
+## 📌 Roadmap
+
+- [ ] Multi-language support 🌍
+- [ ] Dark mode support 🌙
+- [ ] More built-in themes 🎨
+- [ ] Additional onboarding transition effects ✨
+
+---
+
+## 📄 License
+
+```text
+Pharrax Software - YILMAZ ER
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+...
+```
+
+---
+
+## 🌟 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests on [GitHub](https://github.com/Developeryilmaz/onboard_er). 💙
+
+---
+
+## 📬 Contact
+
+For any inquiries or feedback, reach out via [GitHub Issues](https://github.com/Developeryilmaz/onboard_er/issues) or email me at `yilmazer@pharraxsoftware.com`. 🍺
+
