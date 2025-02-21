@@ -1,5 +1,9 @@
 # 🍺 onboard_er - A Flutter Onboarding Package
 
+![Onboarding Banner](https://raw.githubusercontent.com/yourusername/onboard_er/main/doc/banner.png)
+
+🚀 **onboard_er** is a modern and highly customizable Flutter onboarding package using **Flutter BLoC** and **Lottie animations**, designed to deliver an elegant and smooth onboarding experience.
+
 ![Onboarding Demo](https://github.com/Developeryilmaz/onboard_er/blob/main/README.md)  
 *(Replace with an actual demo GIF or screenshot!)*
 
