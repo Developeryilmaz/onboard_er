@@ -35,7 +35,7 @@ class BottomNavigation extends StatelessWidget {
                   onTap: () => context.read<OnboardBloc>().add(PreviousPageEvent()), // ✅ Triggers event
                 ) : SizedBox(height: 55,width: 55),
               _buildButton(
-     btnColor: btnColor,
+       btnColor: btnColor,
                 icon: state.pageIndex == state.pages.length - 1 ? Icons.check : Icons.arrow_forward,
                 onTap: () {
                   if (state.pageIndex < state.pages.length - 1) {
