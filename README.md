@@ -10,7 +10,7 @@
 
 ![Onboarding Banner](https://raw.githubusercontent.com/Developeryilmaz/onboard_er/refs/heads/main/doc/banner.png)
 
-# Pharrax Software #
+#                      Pharrax Software                  #
 
 🚀 **onboard_er** is a clean and customizable Flutter onboarding package using **Flutter BLoC** and **Lottie animations**.
 
