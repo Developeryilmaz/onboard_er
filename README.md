@@ -1,66 +1,89 @@
-# onboard_er 🎨🍺
+# 🍺 Onboard_er - A Flutter Onboarding Package
 
-A highly customizable Flutter onboarding package built using `flutter_bloc`. Create elegant, engaging, and smooth onboarding experiences effortlessly! ✨
+![Onboarding Demo](https://your-demo-gif-url.com)  
+*(Replace with an actual demo GIF or screenshot!)*
+
+🚀 **onboard_er** is a clean and customizable Flutter onboarding package using **Flutter BLoC** and **Lottie animations**.
+
+---
+
+## 🎯 Features
+✅ **Supports Flutter BLoC for state management**  
+✅ **Lottie animations for engaging onboarding**  
+✅ **Customizable navigation buttons & indicators**  
+✅ **Clean architecture for scalability**  
+✅ **Lightweight and easy to integrate** 🍺  
+
+---
 
 ## 📦 Installation
 
-To install, add the following dependency to your `pubspec.yaml`:
+### **1️⃣ Install from GitHub**
+Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  onboard_er: ^0.1.0
+  onboard_er:
+    git:
+      url: https://github.com/yourusername/onboard_er.git
+      ref: main
 ```
 
-Then run:
+OR
 
+### **2️⃣ Install from pub.dev** *(if published)*
 ```sh
-flutter pub get
+flutter pub add onboard_er
 ```
-
-## 🍺 Features
-
-✅ **Beautiful animations** using Lottie
-✅ **StatelessWidget based architecture**
-✅ **Bloc state management**
-✅ **Customizable UI**
-✅ **Notification permission handling**
 
 ---
 
 ## 🛠 Usage
 
-Easily integrate onboarding screens with just a few lines of code:
-
+### **1️⃣ Import the package**
 ```dart
 import 'package:flutter/material.dart';
 import 'package:onboard_er/onboard_er.dart';
+```
 
-void main() {
-  runApp(MyApp());
-}
+### **2️⃣ Define Onboarding Pages**
+```dart
+final List<OnboardPageModel> onboardPages = [
+  OnboardPageModel(
+    title: "Welcome!",
+    description: "This is an amazing onboarding experience.",
+    animationUrl: "https://assets10.lottiefiles.com/packages/lf20_puciaact.json",
+  ),
+  OnboardPageModel(
+    title: "Get Started",
+    description: "Swipe to learn more about the app.",
+    animationUrl: "https://assets10.lottiefiles.com/packages/lf20_rns6nqpy.json",
+  ),
+  OnboardPageModel(
+    title: "You're Ready!",
+    description: "Let's start using the app now.",
+    animationUrl: "https://assets10.lottiefiles.com/packages/lf20_4qiz2d8z.json",
+  ),
+];
+```
 
+### **3️⃣ Use `OnboardScreen` in Your App**
+```dart
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: OnboardScreen(
-        pages: [
-          OnboardModel(
-            title: "Welcome!",
-            description: "This is an awesome onboarding experience.",
-            imageAsset: "assets/animation1.json",
-          ),
-          OnboardModel(
-            title: "Easy to Use",
-            description: "Our app is super easy to use!",
-            imageAsset: "assets/animation2.json",
-          ),
-          OnboardModel(
-            title: "Let's Get Started!",
-            description: "Begin your journey now!",
-            imageAsset: "assets/animation3.json",
-          ),
-        ],
+        pages: onboardPages,
+        onCompleted: () {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const HomeScreen()),
+          );
+        },
       ),
     );
   }
@@ -70,69 +93,56 @@ class MyApp extends StatelessWidget {
 ---
 
 ## 🎨 Customization
-
-You can fully customize your onboarding experience:
+You can **customize** colors, button styles, and more:
 
 ```dart
 OnboardScreen(
-  pages: myOnboardingPages,
-  backgroundColor: Colors.white,
-  buttonTextStyle: TextStyle(fontSize: 18, color: Colors.blue),
+  pages: onboardPages,
+  onCompleted: () {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => const HomeScreen()),
+    );
+  },
+  primaryColor: Colors.blue,    // Customize button colors
+  secondaryColor: Colors.grey,  // Customize indicator colors
+  backgroundColor: Colors.white, // Set background color
 );
 ```
 
 ---
 
-## 🔔 Notification Permission
+## 🤝 Contributing
+Want to improve this package? 🍺 Fork the repo, create a branch, make changes, and submit a PR.
 
-Easily request notification permission after onboarding:
+```sh
+# Clone the repo
+git clone https://github.com/yourusername/onboard_er.git
+cd onboard_er
 
-```dart
-Future<void> requestNotificationPermission() async {
-  final status = await Permission.notification.request();
-  if (status.isGranted) {
-    print("Permission Granted");
-  } else {
-    print("Permission Denied");
-  }
-}
+# Create a new branch
+git checkout -b feature-new-ui
+
+# Make changes and commit
+git add .
+git commit -m "Added new button styles"
+
+# Push and create a Pull Request
+git push origin feature-new-ui
 ```
 
 ---
 
-## 📌 Roadmap
+## 📜 License
+This package is available under the **MIT License**.
 
-- [ ] Multi-language support 🌍
-- [ ] Dark mode support 🌙
-- [ ] More built-in themes 🎨
-- [ ] Additional onboarding transition effects ✨
+```txt
+MIT License
 
----
-
-## 📄 License
-
-```text
-Pharrax Software - YILMAZ ER
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-...
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software to deal in the Software without restriction...
 ```
 
 ---
 
-## 🌟 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests on [GitHub](https://github.com/Developeryilmaz/onboard_er). 💙
-
----
-
-## 📬 Contact
-
-For any inquiries or feedback, reach out via [GitHub Issues](https://github.com/Developeryilmaz/onboard_er/issues) or email me at `yilmazer@pharraxsoftware.com`. 🍺
+### 📢 **If you like this package, don't forget to ⭐ star the repo!** 🍺
 
