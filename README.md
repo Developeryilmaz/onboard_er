@@ -1,4 +1,4 @@
-# 🍺 Onboard_er - A Flutter Onboarding Package
+# 🍺 onboard_er - A Flutter Onboarding Package
 
 ![Onboarding Demo](https://github.com/Developeryilmaz/onboard_er/blob/main/README.md)  
 *(Replace with an actual demo GIF or screenshot!)*

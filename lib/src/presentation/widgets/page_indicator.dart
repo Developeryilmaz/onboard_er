@@ -15,10 +15,11 @@ class PageIndicator extends StatelessWidget {
         (index) => AnimatedContainer(
           duration: const Duration(milliseconds: 300),
           margin: const EdgeInsets.symmetric(horizontal: 4),
-          width: state.pageIndex == index ? 12 : 8,
+          width: state.pageIndex == index ? 16 : 8,
           height: 8,
           decoration: BoxDecoration(
-            color: state.pageIndex == index ? Colors.black : Colors.grey,
+            color:
+                state.pageIndex == index ? Colors.deepPurpleAccent : Colors.grey,
             borderRadius: BorderRadius.circular(4),
           ),
         ),

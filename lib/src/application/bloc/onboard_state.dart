@@ -2,7 +2,7 @@ part of 'onboard_bloc.dart';
 
 class OnboardState extends Equatable {
   final int pageIndex;
-  final List<OnboardPageModel> pages;
+  final List<Widget> pages;
 
   const OnboardState({required this.pageIndex, required this.pages});
 
