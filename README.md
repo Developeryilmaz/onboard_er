@@ -1,7 +1,10 @@
 # 🍺 Onboard_er - A Flutter Onboarding Package
 
-![Onboarding Demo](https://your-demo-gif-url.com)  
+![Onboarding Demo](https://github.com/Developeryilmaz/onboard_er/blob/main/README.md)  
 *(Replace with an actual demo GIF or screenshot!)*
+
+![Log_er Version](https://img.shields.io/badge/Version-0.1.0-blue) 
+![License](https://img.shields.io/badge/License-MIT-green)
 
 🚀 **onboard_er** is a clean and customizable Flutter onboarding package using **Flutter BLoC** and **Lottie animations**.
 
@@ -23,10 +26,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  onboard_er:
-    git:
-      url: https://github.com/yourusername/onboard_er.git
-      ref: main
+  onboard_er: [latest-version]
 ```
 
 OR
@@ -117,7 +117,7 @@ Want to improve this package? 🍺 Fork the repo, create a branch, make changes,
 
 ```sh
 # Clone the repo
-git clone https://github.com/yourusername/onboard_er.git
+git clone https://github.com/Developeryilmaz/onboard_er.git
 cd onboard_er
 
 # Create a new branch
@@ -134,10 +134,10 @@ git push origin feature-new-ui
 ---
 
 ## 📜 License
-This package is available under the **MIT License**.
+This package is available under the **Pharrax Software - YILMAZ ER** license.
 
 ```txt
-MIT License
+Pharrax Software - YILMAZ ER
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software to deal in the Software without restriction...
 ```
@@ -145,4 +145,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 ---
 
 ### 📢 **If you like this package, don't forget to ⭐ star the repo!** 🍺
-
